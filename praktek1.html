@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="praktek1.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+      <p id="fullName">Full Name</p>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Full Name"
+      /><br /><br />
+
+      <p id="dateBirth">Date of Birth</p>
+      <input type="date" id="dateBirth" name="dateBirth" /><br /><br />
+
+      <p>Gender:</p>
+
+      <div id="genderGroup">
+        <label><input type="radio" name="gender" value="Male" /> Male</label
+        ><br />
+        <label
+          ><input type="radio" name="gender" value="Female" /> Female</label
+        >
+      </div>
+
+      <p id="religion">Religion</p>
+      <div class="select">
+        <select name="religion" id="religion">
+          <option value="">Select</option>
+          <option value="islam">Islam</option>
+          <option value="christian">Christian</option>
+          <option value="catholic">Catholic</option>
+        </select>
+      </div>
+      <br />
+
+      <p id="checkNews">How did you get information about SMK Telkom Malang?</p>
+
+      <div id="checkboxGroup">
+        <label
+          ><input type="checkbox" class="checkBoxNews" value="Brochure" />
+          Brochure</label
+        ><br />
+        <label
+          ><input type="checkbox" class="checkBoxNews" value="Newspaper" />
+          Newspaper</label
+        ><br />
+        <label
+          ><input type="checkbox" class="checkBoxNews" value="Banner" />
+          Banner</label
+        ><br />
+        <label
+          ><input type="checkbox" class="checkBoxNews" value="Website" />
+          Website</label
+        ><br />
+        <label
+          ><input type="checkbox" class="checkBoxNews" value="Friend" />
+          Friend</label
+        >
+      </div>
+      <br>
+
+      <button type="submit" class="btn-submit">Submit</button>
+      <button class="btn-cancel">Cancel</button>
+    </form>
+  </body>
+  <script src="praktek1.js"></script>
+</html>
